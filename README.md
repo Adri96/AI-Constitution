@@ -22,7 +22,7 @@ The constitution included in this repo is an example — feel free to replace it
 Clone the repo and run setup once:
 
 ```bash
-git clone https://github.com/youruser/ai-constitution.git
+git clone https://github.com/Adri96/AI-Constitution.git
 cd ai-constitution
 ./setup.sh
 ```
