@@ -3,8 +3,8 @@
 # Usage: ./setup.sh
 REPO="$(cd "$(dirname "$0")" && pwd)"
 
-sudo ln -sf "$REPO/install.sh" /usr/local/bin/install-ai-constitution
-sudo ln -sf "$REPO/uninstall.sh" /usr/local/bin/uninstall-ai-constitution
+sudo ln -sf "$REPO/install.py" /usr/local/bin/install-ai-constitution
+sudo ln -sf "$REPO/uninstall.py" /usr/local/bin/uninstall-ai-constitution
 
 echo "Done! Commands available:"
 echo "  install-ai-constitution [path]"

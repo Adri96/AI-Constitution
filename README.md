@@ -61,6 +61,27 @@ Each install creates symlinks in the target project pointing to `CONSTITUTION.md
 
 Because they are symlinks, any update to `CONSTITUTION.md` is automatically reflected in all projects — no need to reinstall.
 
+### Existing files — append mode
+
+By default, if a file already exists in the target project (e.g. you already have a `CLAUDE.md`), the installer will skip it to avoid overwriting your config.
+
+If you want to keep your existing file and add the constitution to it, use the `--append` flag:
+
+```bash
+install-ai-constitution --append
+install-ai-constitution ~/projects/other-project --append
+```
+
+The constitution will be appended to the end of the existing file, wrapped in markers so it can be cleanly removed later:
+
+```
+<!-- ai-constitution:start -->
+...constitution content...
+<!-- ai-constitution:end -->
+```
+
+Note: appended files are not symlinks, so they won't update automatically when `CONSTITUTION.md` changes. Re-run with `--append` to update them.
+
 ---
 
 ## Uninstall global commands
