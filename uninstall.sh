@@ -7,6 +7,7 @@ LINKS=(
   "$TARGET/CLAUDE.md"
   "$TARGET/AGENTS.md"
   "$TARGET/.github/copilot-instructions.md"
+  "$TARGET/.cursorrules"
 )
 
 for link in "${LINKS[@]}"; do

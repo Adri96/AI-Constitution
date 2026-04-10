@@ -8,6 +8,8 @@ Instead of configuring each tool separately, you define your principles once and
 
 ## Principles
 
+The constitution included in this repo is an example — feel free to replace it with your own principles. Edit `CONSTITUTION.md` to reflect whatever values, behaviors, or constraints you want your AI tools to follow. All installed projects will pick up the changes automatically via symlinks.
+
 1. **Golden Rule** — Do not do to others what you would not want done to you.
 2. **Silver Rule** — Do to others what you would like done to you.
 3. **Do things well** — Things done well lead to more things done well. Things done poorly lead to more things done poorly.
@@ -55,6 +57,7 @@ Each install creates symlinks in the target project pointing to `CONSTITUTION.md
 | `CLAUDE.md`                       | Claude Code    |
 | `AGENTS.md`                       | Codex CLI      |
 | `.github/copilot-instructions.md` | GitHub Copilot |
+| `.cursorrules`                    | Cursor         |
 
 Because they are symlinks, any update to `CONSTITUTION.md` is automatically reflected in all projects — no need to reinstall.
 
