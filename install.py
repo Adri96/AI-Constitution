@@ -9,7 +9,7 @@ MARKER_END = "<!-- ai-constitution:end -->"
 
 
 def get_constitution_path():
-    return os.path.join(os.path.dirname(os.path.abspath(__file__)), "CONSTITUTION.md")
+    return os.path.join(os.path.dirname(os.path.realpath(__file__)), "CONSTITUTION.md")
 
 
 def main():
