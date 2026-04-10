@@ -1,8 +1,14 @@
 # AI Constitution
 
-A minimal set of universal principles to guide every AI tool you work with — Claude, Codex, Copilot, Cursor, and others.
+Every AI coding tool has its own configuration file: Claude wants `CLAUDE.md`, Copilot wants `.github/copilot-instructions.md`, Cursor wants `.cursorrules`, Codex wants `AGENTS.md`. If you work across multiple tools and multiple projects, you end up copy-pasting the same principles everywhere — and they quietly drift out of sync.
 
-Instead of configuring each tool separately, you define your principles once and install them into any project with a single command.
+AI Constitution solves this by letting you define your principles once, in a single `CONSTITUTION.md` file, and install them into any project with one command:
+
+```bash
+install-ai-constitution
+```
+
+That's it. Every tool in that project now shares the same principles, and any future edits to `CONSTITUTION.md` are reflected everywhere automatically.
 
 ---
 
