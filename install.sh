@@ -1,7 +1,7 @@
 #!/bin/bash
 # Usage: ./install.sh /path/to/your/project
 
-TARGET=${1:-.}
+TARGET=${1:-$(pwd)}
 CONSTITUTION="$(cd "$(dirname "$0")" && pwd)/CONSTITUTION.md"
 
 mkdir -p "$TARGET/.github"

@@ -1,7 +1,7 @@
 #!/bin/bash
 # Usage: ./uninstall.sh /path/to/your/project
 
-TARGET=${1:-.}
+TARGET=${1:-$(pwd)}
 
 LINKS=(
   "$TARGET/CLAUDE.md"
